@@ -102,22 +102,334 @@ font-family: 'Lato', sans-serif;
     margin-top: 65px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .big {
     grid-column: 1/4;
+}
 
+.services-image {
+    position: relative;
 }
 
 .text {
-
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .p-white {
-
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .h2-orange {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+/* Конец секции: для жен/муж/дет/акксесуары */
+/* Секция: товары */
+.goods {
+    
 
 }
+
+.goods-title {
+    display: grid;
+    justify-items: center;
+}
+
+.goods-title_h1 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-title_p {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;  
+    margin-bottom: 48px;  
+}
+
+.goods-item {
+    background-color: #F8F8F8;
+}
+
+.goods-item_h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-item_p {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.goods-item_price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.goods-button {
+    position: relative;
+}
+
+.goods-button_text {
+    position: absolute;
+    margin-left: 130px;
+    transform: translate(-50%, -50%);
+    color: #F26376;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Конец секции: товары */
+
+/* ------------------------------------------- */
+/* В данном уроке мы переходим к созданию планшетной версии проекта.
+1. Создать медиа запрос, чтобы наш проект отлично смотрелся на разрешениях
+экрана 768-1439.
+2. Создать планшетную версию проекта.
+3. Мобильную версию сайта создавать не нужно. */
+/* ------------------------------------------- */
+
+/* Верхняя чёрная шапка */
+@media screen and (max-width: 1439px) {
+
+.center {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.logos-left {
+    gap: 41px;
+    margin-top: 18px;
+    margin-bottom: 19px;    
+}
+
+.left-logo-2  {
+    margin-left: 41px;
+}
+
+.right-logo-2 {
+    margin-left: 25px;
+}
+
+.right-logo-3 {
+    margin-left: 42px;
+}
+/* Конец верхней чёрной шапки */
+/* Розовое поле */
+.pink-field {
+    background-color:#F1E4E6;
+}
+
+.pink-field_content {
+    display: flex;
+    align-items: center;
+}
+
+.orange-rectangle {
+    margin-left: 64px;
+    width: 12px;
+}
+
+.title {
+    display: grid;
+    margin-left: 16px;
+}
+
+.title-h1 {
+    display: inline;
+    color: #222;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text-h2 {
+    display: flex;
+    align-items: center;
+}
+
+.title-h2_black {
+
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title-h2_orange {
+    color: #F16D7F;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+/* Конец розового поля */
+/* Секция: для жен/муж/дет/акксесуары */
+
+.services {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 19px;
+}
+
+.services-item {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.big {
+    grid-column: 1/4;
+}
+
+.services-image {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.p-white {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h2-orange {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+/* Конец секции: для жен/муж/дет/акксесуары */
+/* Секция: товары */
+.goods {
+    
+
+}
+
+.goods-title {
+    display: grid;
+    justify-items: center;
+}
+
+.goods-title_h1 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-title_p {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;  
+    margin-bottom: 48px;  
+}
+
+.goods-item {
+    background-color: #F8F8F8;
+}
+
+.goods-item_h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.goods-item_p {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.goods-item_price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.goods-button {
+    position: relative;
+}
+
+.goods-button_text {
+    position: absolute;
+    margin-left: 130px;
+    transform: translate(-50%, -50%);
+    color: #F26376;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+   /* Конец секции: товары */ 
+}
+
+
+
+
+
+
